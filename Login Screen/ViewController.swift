@@ -81,6 +81,7 @@ class ViewController: UIViewController {
         passwordTF = UITextField()
         passwordTF.translatesAutoresizingMaskIntoConstraints = false
         passwordTF.placeholder = "Password"
+        passwordTF.isSecureTextEntry = true
         passwordTF.backgroundColor = .white
         passwordTF.layer.borderWidth = 1.0
         mainView.addSubview(passwordTF)
