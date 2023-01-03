@@ -23,10 +23,13 @@ class ViewController: UIViewController {
     }
     
     func loginScreen(){
+        
+        // Programmatic UIView
         mainView = UIView()
         mainView.translatesAutoresizingMaskIntoConstraints = false
         mainView.backgroundColor = UIColor.systemCyan
         view.addSubview(mainView)
+        // Programmatic Constraint
         NSLayoutConstraint.activate([
             mainView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             mainView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
@@ -35,6 +38,7 @@ class ViewController: UIViewController {
             
         ])
         
+        // Programmaric UILabel
         headerLBL = UILabel()
         headerLBL.translatesAutoresizingMaskIntoConstraints = false
         headerLBL.text = "Nimap Infotech"
@@ -61,6 +65,7 @@ class ViewController: UIViewController {
             middleLBL.trailingAnchor.constraint(equalTo: mainView.trailingAnchor)
         ])
         
+        // Programmatic UITextField
         usernameTF = UITextField()
         usernameTF.translatesAutoresizingMaskIntoConstraints = false
         usernameTF.placeholder = "Username"
@@ -85,6 +90,7 @@ class ViewController: UIViewController {
             passwordTF.trailingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: -10)
         ])
         
+        // Programmatic UIButton
         loginBTN = UIButton()
         loginBTN.translatesAutoresizingMaskIntoConstraints = false
         loginBTN.setTitle("Login", for: .normal)
@@ -115,6 +121,7 @@ class ViewController: UIViewController {
         ])
     }
     
+    // Programmatic Function Or Method
     @objc func LoginFunc(){
         print("Username : \(usernameTF.text!) Password : \(passwordTF.text!)")
     }
